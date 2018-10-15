@@ -28,7 +28,7 @@
     if(pg_num_rows($test) == 0){
         echo '<meta http-equiv="refresh" content="2; URL=./incorrect_pair.php">';
         echo '<meta name="keywords" content="automatic redirection">';
-        redirect('./no_registrado.php');
+        redirect('./incorrect_pair.php);
     }
     $pair_check = "SELECT * FROM users WHERE email = lower('$email') AND
     password = crypt('$pass', password);";
